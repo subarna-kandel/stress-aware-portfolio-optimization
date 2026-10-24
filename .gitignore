@@ -1,0 +1,18 @@
+# Private planning / tracking files
+project_detail.md
+work_progress.md
+
+# Environment and secrets
+.venv/
+venv/
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Raw third-party data (redistribution terms vary; re-download with scripts/download_data.py)
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep

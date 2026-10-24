@@ -1,0 +1,31 @@
+project_name: stress_aware_portfolio_allocation
+random_seed: 42
+trading_days_per_year: 252
+forecast_horizon_days: 5
+training_window_days: 756       # rolling window for GARCH / RF
+refit_every_days: 21            # models are refit monthly; forecasts are produced daily
+hist_vol_window_days: 21        # baseline: rolling historical volatility
+feature_windows: [5, 21, 63]
+vix_lags: [1, 5]
+garch:
+  p: 1
+  q: 1
+  dist: normal
+random_forest:
+  n_estimators: 200
+  min_samples_leaf_grid: [20, 60]
+  max_depth_grid: [4, 8]
+  max_features: 0.5
+  tune_every_n_refits: 12       # hyper-parameter search once a year, within training data only
+  cv_splits: 3
+  n_jobs: 2
+stress:
+  vix_threshold: 25.0           # regime label uses VIX of the previous trading day
+xgboost:
+  n_estimators: 300
+  learning_rate: 0.03
+  max_depth_grid: [2, 4]
+  min_child_weight_grid: [10, 40]
+  tune_every_n_refits: 12
+  cv_splits: 3
+  n_jobs: 2

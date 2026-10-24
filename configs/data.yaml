@@ -1,0 +1,10 @@
+# Data sources and universe (see docs/data_dictionary.md)
+french_base_url: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp
+french_files:
+  industry_daily: 10_Industry_Portfolios_daily_CSV.zip
+  factors_daily: F-F_Research_Data_Factors_daily_CSV.zip
+vix_url: https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv
+start_date: "1990-01-02"      # first VIX observation
+end_date: null                # null = all available
+return_weighting: value        # value-weighted industry portfolios
+assets: [NoDur, Durbl, Manuf, Enrgy, HiTec, Telcm, Shops, Hlth, Utils, Other]

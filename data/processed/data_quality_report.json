@@ -1,0 +1,43 @@
+[
+  {
+    "dataset": "industry_daily",
+    "start": "1926-07-01",
+    "end": "2026-08-31",
+    "n_rows": 26317,
+    "duplicate_dates": 0,
+    "monotonic_index": true,
+    "missing_cells": 0,
+    "max_calendar_gap_days": 12,
+    "n_abs_return_gt_threshold": 0
+  },
+  {
+    "dataset": "factors_daily",
+    "start": "1926-07-01",
+    "end": "2026-08-31",
+    "n_rows": 26317,
+    "duplicate_dates": 0,
+    "monotonic_index": true,
+    "missing_cells": 0,
+    "max_calendar_gap_days": 12,
+    "n_abs_return_gt_threshold": 0
+  },
+  {
+    "dataset": "vix_daily",
+    "start": "1990-01-02",
+    "end": "2026-10-23",
+    "n_rows": 9301,
+    "duplicate_dates": 0,
+    "monotonic_index": true,
+    "missing_cells": 0,
+    "max_calendar_gap_days": 7,
+    "n_abs_return_gt_threshold": null
+  },
+  {
+    "dataset": "aligned",
+    "start": "1990-01-02",
+    "end": "2026-08-31",
+    "n_rows": 9233,
+    "vix_missing_before_ffill": 4,
+    "units": "decimal returns (0.01 = 1%)"
+  }
+]

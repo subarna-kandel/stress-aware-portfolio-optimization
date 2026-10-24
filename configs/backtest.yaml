@@ -1,0 +1,9 @@
+rebalance_frequency: monthly     # monthly | weekly | quarterly
+transaction_cost_bps: 5
+execution_lag_days: 1            # signal at close of t, trade at close of t+1, new weights earn returns from t+2
+cost_sensitivity_bps: [0, 5, 10, 25, 50]
+rebalance_sensitivity: [weekly, monthly, quarterly]
+training_window_sensitivity: [504, 756, 1260]
+target_vol_sensitivity: [0.08, 0.10, 0.12, 0.15]
+max_weight_sensitivity: [0.25, 0.35, 0.50]
+stress_threshold_sensitivity: [20, 25, 30]

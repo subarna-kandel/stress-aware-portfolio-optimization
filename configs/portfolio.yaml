@@ -1,0 +1,11 @@
+cov_window_days: 756
+max_asset_weight: 0.35
+allow_short_selling: false
+allow_leverage: false
+mean_variance:
+  risk_aversion: 5.0
+  shrinkage_to_grand_mean: 0.9   # expected returns shrunk toward the cross-sectional mean
+vol_target:
+  target_vol: 0.10               # annualised
+  max_exposure: 1.0
+  min_exposure: 0.0

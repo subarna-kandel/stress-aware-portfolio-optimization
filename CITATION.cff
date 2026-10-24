@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Stress-Aware Machine Learning for Dynamic Portfolio Allocation"
+type: software
+version: 0.1.0
+date-released: "2026-10-24"
+authors:
+  - name: "Project authors"
+abstract: "Reproducible walk-forward comparison of volatility forecasting models (historical, GARCH, Random Forest, XGBoost) and volatility-adaptive portfolio allocation."
+keywords: [volatility forecasting, portfolio optimization, GARCH, random forest, backtesting]
